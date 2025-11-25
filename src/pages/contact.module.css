@@ -1,0 +1,140 @@
+.pageWrapper {
+    min-height: 100vh;
+    width: 100%;
+    background: #0d0d0e;
+    color: white;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title {
+    font-size: 38px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #b98dff, #7b4bff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 40px;
+  }
+  
+  .contactBox {
+    max-width: 1000px;
+    width: 100%;
+    background: #111;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 18px;
+    border: 1px solid #272727;
+    padding: 30px;
+    gap: 30px;
+    box-shadow: 0 0 25px rgba(140, 0, 255, 0.2);
+    transition: all 0.3s ease, box-shadow 0.4s ease;
+
+  }
+
+  .contactBox:hover{
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 0 20px rgba(140, 0, 255, 0.5);
+    border-color: #8c00ff;
+    background: #1a1a2a;
+  }
+  
+  .left {
+    color: #eee;
+  }
+  
+  .heading {
+    font-size: 28px;
+    font-weight: 700;
+    color: #b98dff;
+    margin-bottom: 10px;
+  }
+  
+  .text {
+    font-size: 15px;
+    color: #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .info p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ddd;
+    margin: 8px 0;
+    font-size: 14px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .input,
+  .textarea {
+    width: 100%;
+    background: #161616;
+    border: 1px solid #272727;
+    padding: 12px;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+  }
+  
+  .input:focus,
+  .textarea:focus {
+    border-color: #b98dff;
+  }
+  
+  .textarea {
+    min-height: 120px;
+    resize: none;
+  }
+  
+  .btn {
+    background: linear-gradient(90deg, #7b4bff, #b98dff);
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(185, 141, 255, 0.4);
+  }
+  
+  .footer {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer a {
+    background: #161616;
+    border: 1px solid #272727;
+    padding: 12px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .footer a:hover {
+    background: #7b4bff;
+    transform: translateY(-5px);
+  }
+  
+  @media (max-width: 800px) {
+    .contactBox {
+      grid-template-columns: 1fr;
+    }
+  }
+  

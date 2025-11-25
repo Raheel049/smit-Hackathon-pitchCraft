@@ -1,0 +1,162 @@
+.pageWrapper {
+    min-height: 100vh;
+    width: 100%;
+    background: #0d0d0e;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title {
+    font-size: 38px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #a47aff, #d1b2ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 40px;
+  }
+  
+  .card {
+    background: #111;
+    width: 100%;
+    max-width: 420px;
+    height: 80vh;
+    border-radius: 20px;
+    padding: 30px;
+    border: 1px solid #222;
+    box-shadow: 0 0 25px rgba(140, 0, 255, 0.25);
+    text-align: center;
+    animation: fadeIn 0.6s ease;
+    transition: all 0.3s ease, box-shadow 0.4s ease;
+
+  }
+
+  .card:hover{
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 0 20px rgba(140, 0, 255, 0.5);
+    border-color: #8c00ff;
+    background: #1a1a2a;
+  }
+  
+  .avatarWrapper {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: #1b1b1b;
+    border: 2px solid #a47aff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 15px;
+    color: #c5a3ff;
+  }
+  
+  .name {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  .infoBox {
+    text-align: left;
+    background: #161616;
+    border: 1px solid #272727;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+  }
+  
+  .infoBox p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ccc;
+    margin: 8px 0;
+    font-size: 15px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .editBtn,
+  .logoutBtn {
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+  }
+  
+  /* EDIT BUTTON */
+  .editBtn {
+    background: linear-gradient(90deg, #7b4bff, #b98dff);
+  }
+  
+  .editBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(185, 141, 255, 0.4);
+  }
+  
+  /* LOGOUT BUTTON */
+  .logoutBtn {
+    background: #2a2a2a;
+    border: 1px solid #444;
+  }
+  
+  .logoutBtn:hover {
+    background: #ff4b4b;
+    border-color: #ff7777;
+    transform: translateY(-3px);
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+
+  .inputField {
+    width: 100%;
+    padding: 14px 18px;
+    background: rgba(30, 30, 30, 0.65);
+    border: 1px solid #2b2b2b;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 15px;
+    transition: all 0.25s ease;
+    outline: none;
+    backdrop-filter: blur(10px);
+    margin-bottom: 10px;
+  }
+  
+  /* Placeholder Style */
+  .inputField::placeholder {
+    color: #9c9c9c;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Focus Animation */
+  .inputField:focus {
+    border-color: #b98dff;
+    box-shadow: 0 0 12px rgba(185, 141, 255, 0.35);
+    transform: translateY(-2px);
+  }
+  
+  /* Hover effect */
+  .inputField:hover {
+    border-color: #7b4bff;
+  }
+
+  

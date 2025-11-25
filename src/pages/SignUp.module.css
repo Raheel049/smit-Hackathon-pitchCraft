@@ -1,0 +1,100 @@
+.wrapper {
+    min-height: 100vh;
+    background: #0d0d0f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .card {
+    background: #151518;
+    padding: 40px 35px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 420px;
+    border: 1px solid #232323;
+    box-shadow: 0 0 25px rgba(120, 70, 255, 0.2);
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  .title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #b98dff;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  
+  .subtitle {
+    color: #bfbfbf;
+    text-align: center;
+    margin-bottom: 28px;
+    font-size: 15px;
+  }
+  
+  .inputField {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 18px;
+    border-radius: 12px;
+    background: #1b1b1d;
+    border: 1px solid #2c2c2e;
+    color: #fff;
+    font-size: 15px;
+    transition: 0.3s;
+  }
+  
+  .inputField:focus {
+    border-color: #8c00ff;
+    box-shadow: 0 0 10px #8c00ff;
+    outline: none;
+  }
+  
+  .button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(90deg, #8c00ff, #5300d6);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+  }
+  
+  .button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(140, 0, 255, 0.5);
+  }
+  
+  .loginText {
+    margin-top: 20px;
+    color: #bfbfbf;
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  .link {
+    color: #b98dff;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  

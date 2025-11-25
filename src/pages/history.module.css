@@ -1,0 +1,98 @@
+.wrapper {
+    padding: 40px;
+    color: white;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0d0d0e, #1a1a1a);
+    transition: background 0.5s ease;
+  }
+  
+  .wrapper:hover {
+    background: linear-gradient(135deg, #1a0d2f, #0d1a3a);
+  }
+  
+  .title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #b98dff;
+    text-shadow: 0 0 10px #b98dff;
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+  
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .card {
+    background: #1a120a;
+    border: 1px solid #272727;
+    padding: 20px;
+    border-radius: 12px;
+    transition: all 0.3s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 0 20px rgba(140, 0, 255, 0.5);
+    border-color: #8c00ff;
+    background: #1a1a2a;
+  }
+  
+  .idea {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #d4b8ff;
+  }
+  
+  .block {
+    margin-top: 10px;
+  }
+  
+  .block h4 {
+    margin: 0;
+    color: #b98dff;
+  }
+  
+  .noResults {
+    color: #888;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  /* Fade-in animation for cards on page load */
+  .card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s forwards;
+  }
+  
+  .card:nth-child(1) { animation-delay: 0.1s; }
+  .card:nth-child(2) { animation-delay: 0.3s; }
+  .card:nth-child(3) { animation-delay: 0.5s; }
+  .card:nth-child(4) { animation-delay: 0.7s; }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+  .dateCont{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .date{
+    width: 100px;
+  }

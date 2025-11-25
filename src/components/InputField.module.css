@@ -1,0 +1,41 @@
+/* .InputField{
+    height: 40px;
+    width: 50%;
+    border: none;
+    background-color: lightblue;
+    border-radius: 10px;
+    font-size: 17px;
+} */
+
+.inputField {
+    width: 100%;
+    padding: 14px 18px;
+    background: rgba(30, 30, 30, 0.65);
+    border: 1px solid #2b2b2b;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 15px;
+    transition: all 0.25s ease;
+    outline: none;
+    backdrop-filter: blur(10px);
+    margin-bottom: 10px;
+  }
+  
+  /* Placeholder Style */
+  .inputField::placeholder {
+    color: #9c9c9c;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Focus Animation */
+  .inputField:focus {
+    border-color: #b98dff;
+    box-shadow: 0 0 12px rgba(185, 141, 255, 0.35);
+    transform: translateY(-2px);
+  }
+  
+  /* Hover effect */
+  .inputField:hover {
+    border-color: #7b4bff;
+  }
+  
